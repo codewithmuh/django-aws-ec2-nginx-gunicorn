@@ -1,0 +1,16 @@
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/{YOUR_PROJECT_MAIN_DIR_NAME}
+ExecStart=/home/ubuntu/{YOUR_PROJECT_MAIN_DIR_NAME}/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          {FOLDER_NAME_WHERE_WSGI_EXISTS}.wsgi:application
+[Install]
+WantedBy=multi-user.target
