@@ -10,11 +10,11 @@ PROJECT_MAIN_DIR_NAME="django-ec2-autoscaling"
 # Clone repository
 git clone "$GIT_REPO_URL" "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
 
-# Change directory to the project scripts directory
+# Change directory to the project main directory
 cd "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
 
 # Make all .sh files executable
-chmod +x *.sh
+chmod +x scripts/*.sh
 
 # Execute scripts for OS dependencies, Python dependencies, Gunicorn, Nginx, and starting the application
 ./scripts/instance_os_dependencies.sh
