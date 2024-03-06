@@ -2,10 +2,10 @@
 set -e
 
 # Replace {YOUR_GIT_REOPO_URL} with your actual Git repository URL
-GIT_REPO_URL="https://github.com/yourusername/yourrepository.git"
+GIT_REPO_URL="https://github.com/codewithmuh/django-ec2-autoscaling.git"
 
 # Replace {YOUR_PROJECT_MAIN_DIR_NAME} with your actual project directory name
-PROJECT_MAIN_DIR_NAME="yourproject"
+PROJECT_MAIN_DIR_NAME="django-ec2-autoscaling"
 
 # Clone repository
 git clone "$GIT_REPO_URL" "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
