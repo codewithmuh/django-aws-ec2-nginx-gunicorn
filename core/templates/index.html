@@ -36,6 +36,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 10px;
         }
         button:hover {
             background-color: #45a049;
@@ -59,7 +60,9 @@
         <p style="color: #ff6600;">Are you connected with me on LinkedIn?</p>
         <button onclick="checkLinkedInConnection()">Check Connection</button>
         <p id="result"></p>
-        <!-- Add additional content or features here -->
+        <!-- Add Subscribe button -->
+        <button onclick="subscribeToChannel()">Subscribe to my channel</button>
+        <button onclick="toGithubRepo()">Github Repo</button>
     </main>
     <footer>
         <p style="color: #ff6600;">&copy; 2024 <span style="color: #0099cc;">CodeWithMuh</span></p>
@@ -71,6 +74,15 @@
             var connected = Math.random() < 0.00; // 5% chance of being connected
             var resultMessage = connected ? "Yes, you are connected with me on LinkedIn!" : "No, you are not connected with me on LinkedIn. Connect now: <a href='https://www.linkedin.com/in/muhammad-rashid-daha/' target='_blank'>Follow me on LinkedIn</a>";
             document.getElementById("result").innerHTML = resultMessage;
+        }
+
+        function subscribeToChannel() {
+            // Redirect users to subscribe to the YouTube channel
+            window.open('https://youtube.com/@codewithmuh?sub_confirmation=1', '_blank');
+        }
+        function toGithubRepo() {
+            // Redirect users to subscribe to the YouTube channel
+            window.open('https://github.com/codewithmuh/django-ec2-autoscaling.git', '_blank');
         }
     </script>
 </body>
