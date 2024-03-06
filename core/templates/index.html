@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithMuh</title>
+    <!-- Add any additional CSS or stylesheets here -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+        iframe {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #ff6600;">Welcome to <span style="color: #0099cc;">CodeWithMuh</span> Youtube Channel!</h1>
+    </header>
+    <main>
+        <!-- Embed YouTube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LaoYcQsPyD8?si=x84PLT5e3rSXbPvQ" frameborder="0" allowfullscreen></iframe>
+        <!-- Add custom message -->
+        <p style="color: #ff6600;">You are watching my latest video on <span style="color: #0099cc;">AWS EC2</span>.</p>
+        <!-- Add LinkedIn game -->
+        <h2 style="color: #0099cc;">LinkedIn Connection Game</h2>
+        <p style="color: #ff6600;">Are you connected with me on LinkedIn?</p>
+        <button onclick="checkLinkedInConnection()">Check Connection</button>
+        <p id="result"></p>
+        <!-- Add additional content or features here -->
+    </main>
+    <footer>
+        <p style="color: #ff6600;">&copy; 2024 <span style="color: #0099cc;">CodeWithMuh</span></p>
+    </footer>
+    <!-- Add any additional scripts or JavaScript here -->
+    <script>
+        function checkLinkedInConnection() {
+            // Logic to check if user is connected on LinkedIn
+            var connected = Math.random() < 0.00; // 5% chance of being connected
+            var resultMessage = connected ? "Yes, you are connected with me on LinkedIn!" : "No, you are not connected with me on LinkedIn. Connect now: <a href='https://www.linkedin.com/in/muhammad-rashid-daha/' target='_blank'>Follow me on LinkedIn</a>";
+            document.getElementById("result").innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>
