@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-PROJECT_MAIN_DIR_NAME="django-ec2-autoscaling"
+PROJECT_MAIN_DIR_NAME="django-aws-ec2-nginx-gunicorn"
 
 # Validate variables
 if [ -z "$PROJECT_MAIN_DIR_NAME" ]; then
