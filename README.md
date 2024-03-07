@@ -2,6 +2,8 @@
 
 This repository provides scripts and instructions for deploying a Django project on AWS EC2 using Nginx, Gunicorn, and other essential components.
 
+![1i (1)](https://github.com/codewithmuh/django-aws-ec2-nginx-gunicorn/assets/51082957/6d7f76c2-ea81-487c-b7c2-3c6d9dd3429a)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following:
