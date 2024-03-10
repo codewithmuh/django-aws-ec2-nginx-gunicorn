@@ -13,7 +13,7 @@ Before you begin, ensure you have the following:
 - Basic understanding of AWS services and deployment concepts.
 
 # Complete Youtube Video Tutorial:
-
+https://youtu.be/KItpu15ZmkY
 
 This project is licensed under MIT License, granting you the freedom to use, modify, and distribute the code.
 
